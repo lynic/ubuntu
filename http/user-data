@@ -8,7 +8,10 @@ autoinstall:
   network:
     version: 2
     ethernets:
-      enp0s3:
+      ens32:
+        dhcp4: true
+        dhcp-identifier: mac
+      ens160:
         dhcp4: true
         dhcp-identifier: mac
   ssh:

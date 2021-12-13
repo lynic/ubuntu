@@ -1,0 +1,13 @@
+{
+  "_comment": "Build with `packer build -var-file=ubuntu2004.json ubuntu.json`",
+  "vm_name": "packer-ubuntu-20.04.3-server",
+  "cpus": "2",
+  "disk_size": "320000",
+  "iso_path": "/Users/ethanlynnl/Documents/iso",
+  "iso_checksum": "sha256:f8e3086f3cea0fb3fefb29937ab5ed9d19e767079633960ccb50e76153effc98",
+  "iso_name": "ubuntu-20.04.3-live-server-amd64.iso",
+  "iso_url": "http://releases.ubuntu.com/20.04/ubuntu-20.04.3-live-server-amd64.iso",
+  "memory": "1024",
+  "ssh_handshake_attempts": "200",
+  "ssh_timeout": "30m"
+}
