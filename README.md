@@ -1,5 +1,22 @@
 # Packer templates for Ubuntu written in legacy JSON
 
+# el-dev
+## Build Ubuntu20.04
+
+```
+git clone https://github.com/lynic/ubuntu
+cd ubuntu
+packer build -on-error=abort  -only=vmware-iso -var-file=el-ubuntu2004.json el-ubuntu.json
+```
+
+## Build CentOS8
+
+```
+git clone https://github.com/lynic/packer-centos8
+cd packer-centos8
+packer build -on-error=abort -only=vmware-iso.vmware el-CentOS8.pkr.hcl
+```
+
 ### Overview
 
 This repository contains [Packer](https://packer.io/) templates for creating Ubuntu Vagrant boxes written in legacy JSON.
